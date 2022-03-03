@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News artictle page</title>
+    <style>
+        header,article, aside, footer,nav {
+            background-color: #659494; 
+            border-radius: 5px;
+            color:white;
+            font-family: arial sans-serif;
+            font-size: 30px;
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        header:before,
+        nav:before,
+        article:before,
+        footer:before{
+            content:'<';
+        }
+           header:after,
+           nav:after,
+           article:after,
+           aside:after,
+           footer:after{
+               content:'>'
+               
+            }
+            article{
+                float: left;
+                margin-block-end: 20px;
+                width: 60%;
+            }
+        aside{
+            float: left;
+            width: calc(40% - 140px);
+        }
+        footer{
+            clear: both;
+
+            }
+        </style>
+
+
+
+        
+
+</head>
+<body>
+    <header>Header</header>
+    <nav>Nav</nav>
+    <article>article</article>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+    
+</body>
+</html>
