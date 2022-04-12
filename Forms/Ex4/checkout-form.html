@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial,  sans-serif;
+        }
+        fieldset {
+         border: 0;
+         padding: 0;
+        }
+        fieldset > div {
+            margin-bottom: 30px;
+        }
+        label{
+            display:block;
+            margin-bottom: 10px;
+        }
+        label span{
+            color:red;
+        }
+        input,
+        select {
+            border: 1px solid gray;
+            padding: 10px;
+            width: 200px;
+        }
+        select{
+            background:trans
+        }
+    </style>
+</head>
+<body>
+  <h1>Checkout</h1>
+    <form action="" method="post">
+        <fieldset>
+            <h2>Shpiing adress</h2>
+            <div class="double-input">       
+            </div>
+
+           
+            <div>
+            <label for="First Name":> First name: <span>*</span>></label>
+            <input id="first_name" type="text" name="firstname" required />
+            
+        </div>
+
+
+            <div>
+                <label for="Last Name":> Last name name: <span>*</span>></label>
+                <input id="Last_name" type="text" name="Last name" required />
+              
+            </div>
+            <div class="single-input">
+                
+                    <label for="Adress":>Adress: <span>*</span>></label>
+                    <input type="text" type="text" name="adress" id="adress" />
+            </div>
+            <div class="double-input">
+            </div>
+            <div>
+                <label for="postcode">Postcode: <span>*</span></label>
+                <ipnut id="postcode" type="text" name="postcode" rezuired />
+            </div>
+            <div>
+                <label for="Country">Country:</label>
+                <div class="select-wrapper">
+                    <slecet id="Country">
+                        <option value="england">England</option>
+                        <option value="scotlnd">Scotland</option>
+                        <option value="ireland">Ireland</option>
+                        <option value="wales">wales</option>
+
+                    </slecet>
+                </div>
+                <h2>Shipping Method</h2>
+                <div class="checbox">
+                    <input id="standard" type="radio" name="shippong-method" value="standard "/>
+                    <label for="standard"> Standard</label>
+                </div>
+                <div class="checkbox">
+                    <input type="radio" id="nextday" name="shipping-method" value="nextday">
+                    <label for="nextday">Next day</label>
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+</html>
